@@ -2,64 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>After Game</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #111;
+      margin: 0;
+      background: #111;
       color: #fff;
     }
     header {
-      background-color: #222;
-      padding: 20px;
+      background: #1c1c1c;
+      padding: 1rem;
       text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      letter-spacing: 1px;
-    }
-    nav {
-      text-align: center;
-      margin-top: 10px;
     }
     nav a {
-      margin: 0 15px;
-      color: #00ffff;
+      color: #fff;
+      margin: 0 1rem;
       text-decoration: none;
     }
     section {
-      padding: 40px 20px;
+      padding: 2rem;
       text-align: center;
-    }
-    .contact-button {
-      background-color: #00ffff;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1em;
-      border-radius: 8px;
-      cursor: pointer;
-      color: #000;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
-      margin-top: 30px;
+      gap: 1rem;
     }
     .gallery img {
       width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #000;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255,255,255,0.2);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .btn {
+      background: #f72585;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      margin-top: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
     }
     footer {
-      background-color: #222;
+      background: #1c1c1c;
       text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
+      padding: 1rem;
+      font-size: 0.9rem;
       color: #aaa;
     }
   </style>
@@ -70,4 +66,35 @@
     <h1>After Game</h1>
     <nav>
       <a href="#about">About</a>
-      <a hre
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Life After the Game</h2>
+    <p>Explore what athletes, gamers, and risk-takers do after the final whistle.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="braden-collum-9HI8UJMSdZA-unsplash.jpg" alt="Athlete at starting line">
+      <img src="dan-meyers-hluOJZjLVXc-unsplash.jpg" alt="Motivational signs">
+      <img src="hush-naidoo-jade-photography-ax_jJpHdYjI-unsplash.jpg" alt="Casino and roulette">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Got questions or want to share your story?</p>
+    <button class="btn" onclick="window.location.href='mailto:stowstar@stowstar.com'">Email us</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 After Game. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
