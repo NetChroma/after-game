@@ -9,20 +9,29 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      text-align: center;
       background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
       color: white;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+    }
+    header img {
+      width: 120px;
+      animation: fadeIn 1.5s ease-in-out;
     }
     .container {
-      padding: 80px 20px;
+      padding: 40px 20px;
     }
     h1 {
       font-size: 3em;
-      margin-bottom: 0.5em;
+      margin-bottom: 0.3em;
+      animation: fadeInUp 1s ease-in-out;
     }
     p {
       font-size: 1.2em;
       margin-bottom: 2em;
+      animation: fadeInUp 1.2s ease-in-out;
     }
     .btn {
       background: #1e90ff;
@@ -31,8 +40,8 @@
       font-size: 1.1em;
       text-decoration: none;
       border-radius: 8px;
-      display: inline-block;
       transition: background 0.3s ease;
+      animation: fadeInUp 1.5s ease-in-out;
     }
     .btn:hover {
       background: #63b3ed;
@@ -41,10 +50,65 @@
       margin-top: 30px;
       font-size: 1em;
       color: #dddddd;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+      gap: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .gallery img {
+      width: 200px;
+      border-radius: 12px;
+    }
+    form {
+      margin-top: 40px;
+    }
+    input[type="email"] {
+      padding: 10px;
+      width: 300px;
+      max-width: 90%;
+      border: none;
+      border-radius: 6px;
+      margin-right: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
+  <!-- Google Analytics Example -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
 </head>
 <body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="Logo">
+  </header>
   <div class="container">
     <h1>After-Game.com</h1>
     <p>A premium domain for post-sport life, recovery, or gaming addiction support platforms.</p>
@@ -52,9 +116,26 @@
       Contact for Acquisition
     </a>
     <div class="email">
-      or email us directly at: <br />
+      or email us directly at:<br>
       <strong>stowstar@stowstar.com</strong>
     </div>
+
+    <div class="gallery">
+      <img src="https://cdn.pixabay.com/photo/2016/11/22/19/15/boxer-1851476_960_720.jpg" alt="Athlete">
+      <img src="https://cdn.pixabay.com/photo/2021/07/12/12/12/casino-6407084_960_720.jpg" alt="Gambler">
+      <img src="https://cdn.pixabay.com/photo/2020/03/11/14/18/soccer-4921370_960_720.jpg" alt="Game result">
+    </div>
+
+    <form action="#" method="POST">
+      <h3>Subscribe for Updates</h3>
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
   </div>
+
+  <footer>
+    &copy; 2025 After-Game.com — All rights reserved.
+  </footer>
 </body>
 </html>
+
