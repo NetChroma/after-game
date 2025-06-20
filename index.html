@@ -2,159 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>After-Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>After Game</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-      color: white;
-      text-align: center;
+      background-color: #111;
+      color: #fff;
     }
     header {
+      background-color: #222;
       padding: 20px;
+      text-align: center;
     }
-    header img {
-      width: 120px;
-      animation: fadeIn 1.5s ease-in-out;
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
     }
-    .container {
-      padding: 40px 20px;
+    nav {
+      text-align: center;
+      margin-top: 10px;
     }
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.3em;
-      animation: fadeInUp 1s ease-in-out;
-    }
-    p {
-      font-size: 1.2em;
-      margin-bottom: 2em;
-      animation: fadeInUp 1.2s ease-in-out;
-    }
-    .btn {
-      background: #1e90ff;
-      color: white;
-      padding: 15px 30px;
-      font-size: 1.1em;
+    nav a {
+      margin: 0 15px;
+      color: #00ffff;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-      animation: fadeInUp 1.5s ease-in-out;
     }
-    .btn:hover {
-      background: #63b3ed;
+    section {
+      padding: 40px 20px;
+      text-align: center;
     }
-    .email {
-      margin-top: 30px;
+    .contact-button {
+      background-color: #00ffff;
+      border: none;
+      padding: 15px 30px;
       font-size: 1em;
-      color: #dddddd;
-      animation: fadeIn 2s ease-in-out;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #000;
     }
     .gallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 40px;
-      gap: 20px;
-      animation: fadeIn 2s ease-in-out;
+      gap: 30px;
+      margin-top: 30px;
     }
     .gallery img {
-      width: 200px;
-      border-radius: 12px;
-    }
-    form {
-      margin-top: 40px;
-    }
-    input[type="email"] {
-      padding: 10px;
       width: 300px;
-      max-width: 90%;
-      border: none;
-      border-radius: 6px;
-      margin-right: 10px;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #1e90ff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
     }
     footer {
-      margin-top: 40px;
+      background-color: #222;
+      text-align: center;
+      padding: 20px;
       font-size: 0.9em;
       color: #aaa;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; } to { opacity: 1; }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
   </style>
-  <!-- Google Analytics Example -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXX');
-  </script>
 </head>
 <body>
+
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png" alt="Logo">
-  </header>
-  <div class="container">
-    <h1>After-Game.com</h1>
-    <p>A premium domain for post-sport life, recovery, or gaming addiction support platforms.</p>
-    <a href="mailto:stowstar@stowstar.com?subject=Domain Inquiry - after-game.com" class="btn">
-      Contact for Acquisition
-    </a>
-    <div class="email">
-      or email us directly at:<br>
-      <strong>stowstar@stowstar.com</strong>
-    </div>
-
-    <div class="gallery">
-      <img src="https://cdn.pixabay.com/photo/2016/11/22/19/15/boxer-1851476_960_720.jpg" alt="Athlete">
-      <img src="https://cdn.pixabay.com/photo/2021/07/12/12/12/casino-6407084_960_720.jpg" alt="Gambler">
-      <img src="https://cdn.pixabay.com/photo/2020/03/11/14/18/soccer-4921370_960_720.jpg" alt="Game result">
-    </div>
-
-    <form action="#" method="POST">
-      <h3>Subscribe for Updates</h3>
-      <input type="email" placeholder="Your email address" required>
-      <button type="submit">Subscribe</button>
-    </form>
-  </div>
-
-  <footer>
-    &copy; 2025 After-Game.com — All rights reserved.
-  </footer>
-  <section id="gallery" style="text-align:center; padding: 40px;">
-  <h2>Life After the Game</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
-    <div>
-      <img src="sportsman.jpg" alt="Athlete Start" style="width:300px; border-radius: 8px;">
-      <p>Athletes chasing legacy</p>
-    </div>
-    <div>
-      <img src="support.jpg" alt="Support Message" style="width:300px; border-radius: 8px;">
-      <p>Support for Every Step</p>
-    </div>
-    <div>
-      <img src="roulette.jpg" alt="Casino and Gambling" style="width:300px; border-radius: 8px;">
-      <p>Escaping the Odds</p>
-    </div>
-  </div>
-</section>
-
-</body>
-</html>
-
-
+    <h1>After Game</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a hre
